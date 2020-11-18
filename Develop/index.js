@@ -69,7 +69,6 @@ const generateREADME = (response) =>
 ## Overview
 *${response.description}*
 
-
 ---
 
 # Table of Content:
@@ -114,11 +113,7 @@ You can visit my [Github Profile](https://github.com/${response.githubUsername})
 * Othneil Drew's [README.md](https://github.com/othneildrew/Best-README-Template) Template.
 
 
-
-
-
 ---
-
 © SMU Coding Bootcamp 2020. All Rights Reserved.
 `;
    
