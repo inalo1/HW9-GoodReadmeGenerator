@@ -58,34 +58,37 @@ inquirer.prompt([
 
 const generateREADME = (response) => 
 
-    `## Project Title 
-    ${response.title}
+`# ${response.title}
 
-    # Description
-    ${response.description}
-    
-    # Table of Content 
+## Description:
+${response.description}
 
-    # Installation Instructions
-    ${response.installationInstructions}
+# Table of Content:
+* [Installation](#installation)
+* [Usage Information](#Usage)
+
+
+# Installation Instructions
+${response.installationInstructions}
+
+# Usage Information
+${response.usageInformation}
+
+# Contribution Guidelines
+${response.contributionGuidelines}
+
+# Test Instructions
+${response.testInstructions}
+
+# License
+${response.license}
+
+---
+# Questions
+* [github](https://github.com/${response.githubUsername})
+* [email](${response.eMail})
     
-    # Usage Information
-    ${response.usageInformation}
-    
-    # Contribution Guidelines
-    ${response.contributionGuidelines}
-    
-    # Test Instructions
-    ${response.testInstructions}
-    
-    # License
-    ${response.license}
-    
-    # Information
-    ${response.githubUsername}
-    ${response.eMail}
-        
-    `;
+`;
    
 userInput()
 .then((response) => writeFileAsync('README.md', generateREADME(response)))
