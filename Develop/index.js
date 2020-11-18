@@ -51,7 +51,42 @@ const questions = inquirer
             message: 'What is your e-mail address?',
             name: 'e-mail',
         },
-    ]);
+    ])
+    .then((response) => {
+        console.log(response)
+
+        let readmeTemplate =
+        `## Project Title
+        ${response.title}
+
+        # Description
+        ${response.description}
+        
+        # Table of Content 
+
+        # Installation Instructions
+        ${response.installation-instructions}
+        
+        # Usage Information
+        ${response.usage-information}
+        
+        # Contribution Guidelines
+        ${response.contribution-guidelines}
+        
+        # Test Instructions
+        ${response.test-instructions}
+        
+        # License
+        ${response.license}
+        
+        # Information
+        ${response.github-username}
+        ${response.e-mail}
+         
+        ` 
+
+
+    })
 
 
 // function to write README file
