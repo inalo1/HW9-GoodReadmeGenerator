@@ -15,7 +15,7 @@ inquirer.prompt([
     {
         type: 'input',
         message: 'Project Description:',
-        name: 'decription',
+        name: 'description',
     },
     {
         type: 'checkbox',
@@ -69,14 +69,20 @@ const generateREADME = (response) =>
 ## Overview
 *${response.description}*
 
+
+---
+
 # Table of Content:
 * [Technologies Used](#technologies-used)
-* [Installation Instruction](#installation-instruction)
+* [Installation Instructions](#installation-instructions)
 * [Usage Information](#usage-information)
 * [Contribution Guidelines](#contribution-guidelines)
 * [Test Instructions](#test-instructions)
 * [License](#license)
 * [Questions](#questions)
+* [Additional Resources](#additional-resources)
+
+---
 
 ## Technologies Used
 ${response.technologies}
@@ -93,15 +99,27 @@ ${response.contributionGuidelines}
 ## Test Instructions
 ${response.testInstructions}
 
+---
+
 ## License
-Licensed under the ${response.license} license.
+Licensed under ${response.license}.
 
-## Questions
-Feel 
-* [github](https://github.com/${response.githubUsername})
-* [email](${response.eMail})
+---
 
-© 2020 Microsoft Corporation. Confidential and Proprietary. All Rights Reserved.
+### **Questions**
+You can visit my [Github Profile](https://github.com/${response.githubUsername}) for additional information. Otherwise, please feel free to email me at *${response.eMail}* for any questions, comments or feedback.
+
+### **Additional Resources**
+* Understanding [Markdown](https://guides.github.com/features/mastering-markdown/).
+* Othneil Drew's [README.md](https://github.com/othneildrew/Best-README-Template) Template.
+
+
+
+
+
+---
+
+© SMU Coding Bootcamp 2020. All Rights Reserved.
 `;
    
 userInput()
