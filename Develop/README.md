@@ -19,7 +19,7 @@
 ---
 
 ## Technologies Used
-
+HTML, CSS, Javascript, Python
 
 ## Installation Instructions
 

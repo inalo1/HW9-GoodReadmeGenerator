@@ -20,7 +20,7 @@ inquirer.prompt([
     {
         type: 'checkbox',
         message: 'Check all that was used',
-        choices: ["HTML", "CSS", "Javascript", "Python", "Java"],
+        choices: ["HTML", " CSS", " Javascript", " Python", " Java"],
         name: 'technologies',
     },
     {
