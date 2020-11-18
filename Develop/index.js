@@ -18,6 +18,12 @@ inquirer.prompt([
         name: 'decription',
     },
     {
+        type: 'checkbox',
+        message: 'Check all that was used',
+        choices: ["HTML", "CSS", "Javascript", "Python", "Java"],
+        name: 'technologies',
+    },
+    {
         type: 'input',
         message: 'Installation Instructions:',
         name: 'installationInstructions',
@@ -60,34 +66,42 @@ const generateREADME = (response) =>
 
 `# ${response.title}
 
-## Description:
-${response.description}
+## Overview
+*${response.description}*
 
 # Table of Content:
-* [Installation](#installation)
-* [Usage Information](#Usage)
+* [Technologies Used](#technologies-used)
+* [Installation Instruction](#installation-instruction)
+* [Usage Information](#usage-information)
+* [Contribution Guidelines](#contribution-guidelines)
+* [Test Instructions](#test-instructions)
+* [License](#license)
+* [Questions](#questions)
 
+## Technologies Used
+${response.technologies}
 
-# Installation Instructions
+## Installation Instructions
 ${response.installationInstructions}
 
-# Usage Information
+## Usage Information
 ${response.usageInformation}
 
-# Contribution Guidelines
+## Contribution Guidelines
 ${response.contributionGuidelines}
 
-# Test Instructions
+## Test Instructions
 ${response.testInstructions}
 
-# License
-${response.license}
+## License
+Licensed under the ${response.license} license.
 
----
-# Questions
+## Questions
+Feel 
 * [github](https://github.com/${response.githubUsername})
 * [email](${response.eMail})
-    
+
+© 2020 Microsoft Corporation. Confidential and Proprietary. All Rights Reserved.
 `;
    
 userInput()
