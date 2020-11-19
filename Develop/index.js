@@ -111,6 +111,7 @@ You can visit my [Github Profile](https://github.com/${response.githubUsername})
 ### **Additional Resources**
 * Understanding [Markdown](https://guides.github.com/features/mastering-markdown/).
 * Othneil Drew's [README.md](https://github.com/othneildrew/Best-README-Template) Template.
+    *Template description credit*
 
 
 ---
@@ -119,7 +120,7 @@ You can visit my [Github Profile](https://github.com/${response.githubUsername})
    
 userInput()
 .then((response) => writeFileAsync('README.md', generateREADME(response)))
-.then(() => console.log('Successfully wrote to README.md'))
+// .then(() => console.log('Successfully wrote to README.md'))
 .catch((err) => console.error(err));
     
 
