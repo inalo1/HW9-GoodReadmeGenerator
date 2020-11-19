@@ -120,7 +120,7 @@ You can visit my [Github Profile](https://github.com/${response.githubUsername})
    
 userInput()
 .then((response) => writeFileAsync('README.md', generateREADME(response)))
-// .then(() => console.log('Successfully wrote to README.md'))
+.then(() => console.log('We have successfully generated your README.md!'))
 .catch((err) => console.error(err));
     
 
